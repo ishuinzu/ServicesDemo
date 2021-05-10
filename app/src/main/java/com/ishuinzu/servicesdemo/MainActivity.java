@@ -21,12 +21,14 @@ public class MainActivity extends AppCompatActivity {
         btnStartService.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Start Service
                 startService(new Intent(MainActivity.this, MyService.class));
             }
         });
         btnStopService.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Stop Service
                 stopService(new Intent(MainActivity.this, MyService.class));
             }
         });
